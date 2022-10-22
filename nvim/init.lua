@@ -1,13 +1,8 @@
-require('plugins')
+pcall(require, 'impatient')
+
+require('functions')
 require('settings')
+require('colorscheme')
+require('autocmds')
+require('plugins')
 require('keymappings')
-
-
--- vim.o.relativenumber = true
-
- 
-vim.g.loaded = 1
-vim.g.loaded_netrwPlugin = 1
-
--- empty setup using defaults
-require("nvim-tree").setup()
