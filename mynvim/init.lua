@@ -12,6 +12,10 @@ vim.keymap.set("v", "<space>x", ":.lua<CR>")
 vim.keymap.set("i", "jk", "<ESC>")
 vim.keymap.set("n", "<C-s>", "<cmd>w<CR>")
 
+vim.keymap.set('n', 'grn', vim.lsp.buf.rename)
+vim.keymap.set('n', 'gra', vim.lsp.buf.code_action)
+vim.keymap.set('n', 'grr', vim.lsp.buf.references)
+
 -- Highlight when yanking (copying) text
 --  Try it with `yap` in normal mode
 --  See `:help vim.highlight.on_yank()`
