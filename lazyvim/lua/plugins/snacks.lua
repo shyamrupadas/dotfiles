@@ -12,7 +12,16 @@ return {
 
     local keys = explorer.win.list.keys
 
-    keys["o"] = "confirm" -- open inside Neovim
+    keys["o"] = function(picker)
+      vim.notify(
+        "Explorer: key 'o' is remapped to open files inside Neovim (non-default behavior)",
+        vim.log.levels.WARN,
+        { title = "Snacks Explorer" }
+      )
+
+      picker:action("confirm") -- Snacks Explorer uses 'confirm' as an action
+    end
+
     keys["l"] = "confirm" -- оставим l тоже открывать
     keys["O"] = "explorer_open" -- external open
   end,
