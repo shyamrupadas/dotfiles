@@ -11,7 +11,7 @@ return {
       opts.formatters_by_ft.javascript = { "eslint_d", "prettier" }
 
       opts.default_format_opts = opts.default_format_opts or {}
-      opts.default_format_opts.timeout_ms = 8000
+      opts.default_format_opts.timeout_ms = 15000
 
       return opts
     end,

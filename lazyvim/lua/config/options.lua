@@ -3,3 +3,4 @@
 -- Add any additional options here
 
 vim.g.snacks_animate = false -- disable all Snacks animations globally
+vim.opt.relativenumber = false
