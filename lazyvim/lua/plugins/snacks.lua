@@ -6,6 +6,7 @@ return {
     opts.picker.sources.explorer = opts.picker.sources.explorer or {}
 
     local explorer = opts.picker.sources.explorer
+    explorer.follow_file = false -- отключаем автопрыжки на текущий файл
     explorer.win = explorer.win or {}
     explorer.win.list = explorer.win.list or {}
     explorer.win.list.keys = explorer.win.list.keys or {}
